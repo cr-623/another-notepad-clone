@@ -1,7 +1,7 @@
 # Yet another notepad clone
 **Pure 100% vibe coded, AI generated Python PySide6 Notepad clone** *Created with Claude 3.5 Sonnet / 3.7 Sonnet*
 
-![Main Interface](example%20screenshots/main%20interface.png)
+![Main Interface](example%20screenshots/Main%20interface.png)
 
 ## Key Features
 
