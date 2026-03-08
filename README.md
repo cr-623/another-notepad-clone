@@ -1,7 +1,7 @@
 # Yet another notepad clone
 **Pure 100% vibe coded, AI generated Python PySide6 Notepad clone** *Created with Claude 3.5 Sonnet / 3.7 Sonnet*
 
-![Main Interface](Split%20view%20mode.png)
+![Main Interface](example%20screenshots/main%20interface.png)
 
 ## Key Features
 
@@ -15,15 +15,17 @@
 * **Themes:** Light and Dark mode toggle.
 * **Fonts:** Any system font with a searchable picker and live preview. 
 * **Fullscreen:** F11 for focus mode, Esc to exit.
-![Fullscreen Mode](Fullscreen.png)
+![Fullscreen Mode](example%20screenshots/Fullscreen.png)
 * **Customization:** Font size 6–96pt, Zoom in/out (Ctrl+Plus/Minus or Scroll wheel).
 * **Line Numbers & Highlighting:** Supports "Off", "Code", and "Text" modes.
-![Syntax Highlighting](Code%20highlighting.png)
+![Syntax Highlighting](example%20screenshots/Code%20highlighting.png)
+![Text Highlighting](example%20screenshots/Text%20highlighting.png)
 
 ###  Formula Calculator
 * **Live Evaluation:** Auto-evaluate on `=` keypress.
 * **Ctrl+E** to evaluate selection or all.
-* **Advanced Math:** Supports variables (`x = 5+3`), constants (`pi`, `e`), and functions (`sqrt`, `sin`, `log10`, etc.).
+* **Math:** Supports variables (`x = 5+3`), constants (`pi`, `e`), and functions (`sqrt`, `sin`, `log10`, etc.).
+* **WARNING:** Log is natural log, use log10 for base-10 log
 * **Variable Inspector:** Keep track of your defined variables.
 
 ###  Spell Check
@@ -31,13 +33,14 @@
 * **Smart Suggestions:** Right-click suggestions (up to 8).
 * **Personal Dictionary:** Add words that persist across sessions.
 * *Requires:* `pip install pyspellchecker`
-![Text Highlighting](Text%20highlighting.png)
+* **WARNING:** Does not work after compiled with nuitka.
+![Typo Highlighting/Spelling check](example%20screenshots/Unfortunately%20thicc%20is%20not%20a%20word.png)
 
 ###  Split View Mode
 * **Dual Editing:** Show any tab alongside your current one (Ctrl+Shift+2).
 * **Live Sync:** Both panes are fully editable and share the same live document.
 * **Adjustable:** Draggable divider to set your preferred width.
-![Split View](Split%20view%20mode.png)
+![Split View](example%20screenshots/Split%20view%20mode.png)
 
 ###  Files & Session
 * **Session Restore:** All tabs reopen exactly where you left them on next launch.
@@ -49,7 +52,7 @@
 * **Storage:** All config, session data, and dictionaries are stored in `%APPDATA%\EnhancedNotepad\`.
 * **Portable:** The compiled EXE can run from anywhere.
 * **Ligature Support:** Looks great with coding fonts like Cascadia Code.
-![Ligatures](Cascadia%20code%20ligatures.png)
+![Ligatures](example%20screenshots/Cascadia%20code%20ligatures.png)
 
 ---
 *Pull requests are much appreciated.
