@@ -1,85 +1,55 @@
-# another-notepad-clone
-Pure 100% vibe coded, AI generated python PySide6 Notepad clone
-Created with Claude Sonnet 4.6
-It has:
+# Yet another notepad clone
+**Pure 100% vibe coded, AI generated Python PySide6 Notepad clone** *Created with Claude 3.5 Sonnet / 3.7 Sonnet*
 
-Editing
+![Main Interface](Split%20view%20mode.png)
 
-    Unlimited tabbed documents
-    Full undo/redo per tab
-    Find / Find Next / Find Previous
-    Find & Replace with Replace All
-    Go To Line
-    Select All, Cut, Copy, Paste, Delete
-    Insert Time/Date (F5)
-    Word wrap toggle
-    Middle-click to close tab
+## Key Features
 
-Spell Check
+###  Editing & Navigation
+* **Unlimited tabbed documents** with middle-click to close.
+* **Full undo/redo** per tab.
+* **Navigation:** Ctrl+Tab / Ctrl+Shift+Tab switching, Up/Down boundary teleport.
+* **Standard Tools:** Find/Replace (Next/Previous), Go To Line, Insert Time/Date (F5).
 
-    Red squiggly underlines
-    Right-click suggestions (up to 8)
-    Add to personal dictionary (persists)
-    Requires pip install pyspellchecker
+###  Appearance & UI
+* **Themes:** Light and Dark mode toggle.
+* **Fonts:** Any system font with a searchable picker and live preview. 
+* **Fullscreen:** F11 for focus mode, Esc to exit.
+![Fullscreen Mode](Fullscreen.png)
+* **Customization:** Font size 6–96pt, Zoom in/out (Ctrl+Plus/Minus or Scroll wheel).
+* **Line Numbers & Highlighting:** Supports "Off", "Code", and "Text" modes.
+![Syntax Highlighting](Code%20highlighting.png)
 
-Formula Calculator
+###  Formula Calculator
+* **Live Evaluation:** Auto-evaluate on `=` keypress.
+* **Ctrl+E** to evaluate selection or all.
+* **Advanced Math:** Supports variables (`x = 5+3`), constants (`pi`, `e`), and functions (`sqrt`, `sin`, `log10`, etc.).
+* **Variable Inspector:** Keep track of your defined variables.
 
-    Auto-evaluate on = keypress (toggleable)
-    Ctrl+E to evaluate all / selection
-    Named variables (x = 5+3)
-    Colon syntax (area: w*h)
-    Full math functions (sqrt, sin, cos, tan, log, exp, abs…)
-    ! Warning: log is natural log. use log10 for base-10 log
-    Constants: pi, e
-    Variable inspector & clear
+###  Spell Check
+* **Visual Feedback:** Red squiggly underlines for typos.
+* **Smart Suggestions:** Right-click suggestions (up to 8).
+* **Personal Dictionary:** Add words that persist across sessions.
+* *Requires:* `pip install pyspellchecker`
+![Text Highlighting](Text%20highlighting.png)
 
-Files & Session
+###  Split View Mode
+* **Dual Editing:** Show any tab alongside your current one (Ctrl+Shift+2).
+* **Live Sync:** Both panes are fully editable and share the same live document.
+* **Adjustable:** Draggable divider to set your preferred width.
+![Split View](Split%20view%20mode.png)
 
-    Open / Save / Save As / Save All
-    Export to PDF (preserves font & theme)
-    Autosave with configurable interval
-    Session restore — all tabs reopen on next launch
-    Recent files list (up to 20, keyboard accessible)
-    Reopen closed tabs (Ctrl+Shift+T + history menu)
-    New Window
-    Command-line / double-click file opening
+###  Files & Session
+* **Session Restore:** All tabs reopen exactly where you left them on next launch.
+* **Recent Files:** Access up to 20 recent documents via keyboard.
+* **Reopen Closed Tabs:** Ctrl+Shift+T to rescue accidentally closed work.
+* **Export:** Professional PDF export that preserves your font and theme.
 
-Appearance
+###  Technical Details
+* **Storage:** All config, session data, and dictionaries are stored in `%APPDATA%\EnhancedNotepad\`.
+* **Portable:** The compiled EXE can run from anywhere.
+* **Ligature Support:** Looks great with coding fonts like Cascadia Code.
+![Ligatures](Cascadia%20code%20ligatures.png)
 
-    Light and Dark themes
-    Any system font (searchable picker with live preview)
-    Custom fonts via %APPDATA%\EnhancedNotepad\fonts\
-    Font size 6–96pt
-    Zoom in/out (Ctrl+=/−, RMB + scroll wheel)
-    Reset zoom (Ctrl+0)
-    Line numbers
-    Syntax highlighting (Off / Code / Text)
-    Fullscreen — F11, Esc to exit
-
-Split View
-
-    Ctrl+Shift+2 or View menu
-    Pick any tab to show alongside current
-    Both panes fully editable, shared live document
-    Draggable divider
-
-Status Bar
-
-    Line & column
-    Character count
-    Word count
-    Selection count (chars + words)
-    Spell check indicator
-
-Navigation
-
-    Ctrl+Tab / Ctrl+Shift+Tab between tabs
-    Up/Down boundary teleport
-    Middle-click close
-
-Storage
-
-    All config, session, dictionary, fonts → %APPDATA%\EnhancedNotepad\
-    Exe can live anywhere
-
-Pull requests are much appreciated.
+---
+*Pull requests are much appreciated.
