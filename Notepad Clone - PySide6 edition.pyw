@@ -2030,8 +2030,19 @@ class NotepadApp(QMainWindow):
 
     def pre_process_expression(self, expr: str) -> str:
         expr = expr.replace('^', '**')
+        # Insert * between digit and letter/bracket ONLY when the digit is not
+        # part of a known function name (e.g. log10, log2).
+        # Strategy: protect known function names, do substitution, restore.
+        _known = ['log10', 'log2']
+        _placeholders = {}
+        for i, fn in enumerate(_known):
+            ph = f'__FN{i}__'
+            _placeholders[ph] = fn
+            expr = expr.replace(fn, ph)
         expr = re.sub(r'(\d)(?![eE][+-]?\d)([a-zA-Z\(])', r'\1*\2', expr)
         expr = re.sub(r'(\))([0-9a-zA-Z])', r'\1*\2', expr)
+        for ph, fn in _placeholders.items():
+            expr = expr.replace(ph, fn)
         return expr
 
     def _parse_formula_line(self, content, evaluator):
