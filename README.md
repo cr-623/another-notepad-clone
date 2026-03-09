@@ -1,5 +1,6 @@
 # Yet another notepad clone
 **Pure 100% vibe coded, AI generated Python PySide6 Notepad clone** *Created with Claude 4.6 Sonnet*
+
 **God object, all 2000+ lines of code are shoved into the same file**
 
 ![Main Interface](example%20screenshots/Main%20interface.png)
