@@ -1,0 +1,4 @@
+Earlier versions of the Notepad Clones
+Version 4 is missing, or never existed
+v5.x contains all programs with Version 5.x in the About tab, but 3 of them are all v5.0, as I don't always change the description after updating
+Version 5.3 is the only confirmed one. The others have slight differences, but are mostly the same
